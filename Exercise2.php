@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+</html>
+<?php
+
+/*
+-- Exercise 5
+
+- Part 1 :
+You need to create a web page with basics HTML tags.
+In this page, you'll display all the characteristics of an imaginary character, from a role-play game.
+
+    The character information will be saved in different variables.
+There is four (4) informations :
+-- An avatar image
+-- The last name
+-- The first name
+-- An array of characteristics (like attak point, defense point... put anything you want)
+Use an associative array.
+
+*/
+
+
+
+
+$avatarImage = "<img src='data:image/jpeg;base64,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'";
+echo $avatarImage;
+
+$lastName = "mario";
+$firstName = "super";
+
+$characteristics = [
+    "attack" => 11,
+    "defense" => 12,
+];
+
+echo "<br>";
+
+echo "<h1>" . $firstName;
+echo "<h1>" . $lastName . "</h1>";
+
+/*
+Short way to print in html(echo) !
+<h2><?= $lastName ?> </h2>
+*/
+/*
+    
+    - Part 2:
+    Based on the 'character' exercise, make sure that, if its characteristic "Attak" or "Defense" are greater than 9, an additional message is displayed:
+      */
+/*
+if ($characteristics['attack'] or $characteristics['defense'] < 10) {
+    echo "<div class='alert'>
+            <strong>Congratulations !</strong> Your character is ready to fight.</strong>
+            </div>";
+} elseif ($characteristics["attack"] || $characteristics["defense"] < 5) {
+
+    /*
+            Add a conddition, if it is below 5, display message : 
+                
+                echo "<div class='alert'>
+                <strong>Wait !</strong> Your charachter is too weeeakk!
+                </div>";
+            }
+            */
+
+if ($characteristics["attack"]  > 10) {
+    echo "<div class='alert'>
+            <strong>Congratulations !</strong> Your character is ready to fight.</strong>
+            </div>";
+} elseif ($characteristics["defense"] > 10) {
+    echo "<div class='alert'>
+    <strong>Wait !</strong> Your character is ready to fight.!
+    </div>";
+} elseif ($characteristics["attack"] < 5) {
+    echo "<div class='alert'>
+    <strong>Wait !</strong> Your charachter is too weeeakk!
+    </div>";
+} elseif ($characteristics["attack"] < 5) {
+    echo "<div class='alert'>
+    <strong>Wait !</strong> Your charachter is too weeeakk!
+    </div>";
+}
